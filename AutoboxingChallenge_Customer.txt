@@ -1,0 +1,28 @@
+package com.JacklynGithub
+
+import java.util.ArrayList;
+
+/*
+   created 10/31/2020 by Jacklyn Davis.
+*/
+
+
+public class Customer{
+     private String name;
+     private ArrayList<Double> transactions;
+
+     class Customer(String name, double initialAmount) {
+         this.name = name;
+         this.transactions = new ArrayList<Double>();
+         addTransaction(initialAmount);
+     }   
+
+     public String getName(){
+         return name;
+     }
+
+     public ArrayList<Double> getTransactions(){
+         return transactions;
+     }
+
+}
