@@ -9,21 +9,30 @@ import java.util.ArrayList;
 
 public class Customer{
      private String name;
+     private double totalFunds;
      private ArrayList<Double> transactions;
 
      class Customer(String name, double initialAmount) {
          this.name = name;
          this.transactions = new ArrayList<Double>();
          addTransaction(initialAmount);
-         "System.out.println("Success! Welcome to your new bank account!");
+         this.totalFunds = initialAmount;
+         "System.out.println("Success! Welcome to your new bank account! Your bank account has a balance of $" + totalFunds + " .");
      }   
 
      public String getName(){
          return name;
      }
+     
+     public double getTotalFunds(){
+           return totalCash;
+     }
 
      public ArrayList<Double> getTransactions(){
          return transactions;
      }
-
+     
+     public void addTransaction(double amount){
+          transactions.add(amount);
+     } 
 }
