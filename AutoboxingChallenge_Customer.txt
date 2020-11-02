@@ -15,6 +15,7 @@ public class Customer{
          this.name = name;
          this.transactions = new ArrayList<Double>();
          addTransaction(initialAmount);
+         "System.out.println("Success! Welcome to your new bank account!");
      }   
 
      public String getName(){
