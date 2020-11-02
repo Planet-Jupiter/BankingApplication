@@ -1,0 +1,37 @@
+package com.JacklynGithub
+
+import
+
+/*
+  Created 11/2/2020 by Jacklyn Davis
+*/
+
+public class Main{
+     
+     public static void main(String[] args){
+         Bank bank new Bank("Wells Fargo Bank");
+
+         bank.addBranch("Birmingham");
+         bank.addBranch("Atlanta");
+
+         bank.addCustomer("Birmingham", "Josh", 100.00);
+         bank.addCustomer("Birmingham", "Amy", 50.00);     
+         bank.addCustomer("Birmingham", "Jesus", 150.00);
+
+
+         bank.addCustomer("Atlanta", "Brenda", 200.00);
+         bank.addCustomer("Atlanta", "Curtis", 100.00);
+         bank.addCustomer("Atlanta", "Alice", 50.00); 
+
+         bank.addCustomerTransaction("Birmingham", "Josh", 25.00);
+         bank.addCustomerTransaction("Birmingham", "Amy", 75.00);
+         
+         bank.addCustomerTransaction("Atlanta", "Alice", 25.15);
+         bank.addCustomerTransaction("Atlanta", "Curtis", 66.00);
+
+         bank.listCustomers("Birmingham", true);
+         bank.listCustomers("Atlanta", false);
+
+     } 
+
+}
